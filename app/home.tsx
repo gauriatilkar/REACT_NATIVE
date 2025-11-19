@@ -6,6 +6,7 @@ import Sidebar from '../component/layout/Sidebar';
 import Dashboard from '../component/dashboard/Dashboard';
 import StudentsTable from './students/StudentsTable';
 import CoachesTable from './coaches/CoachesTable';
+import AttendancePage from './attendance/AttendancePage';
 
 export default function HomeScreen() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function HomeScreen() {
       case 'Students':
         return <StudentsTable />;
       case 'Attendance':
-        return <Dashboard />; // Replace with AttendanceTable when created
+        return <AttendancePage />; // Replace with AttendanceTable when created
       case 'Fees':
         return <Dashboard />; // Replace with FeesTable when created
       case 'Coaches':
